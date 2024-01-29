@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            padding: 30px;
+            background-color: blue;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="voteStatus()">Click Here!</button>
+    <script>
+        function voteStatus() {
+            if (prompt("Enter your current Age:") >= 18) {
+                alert("You are eligible to vote.");
+            } else {
+                alert("You are not eligible to vote.");
+            }
+        }
+    </script>
+</body>
+
+</html>
